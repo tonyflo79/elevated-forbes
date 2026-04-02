@@ -360,7 +360,7 @@
   </section>
 
   <!-- ═══════════════════════════════════════
-       SECTION 4: PERKS SPOTLIGHT
+       SECTION 4: PERKS SPOTLIGHT — PARTNER SHOWCASE
        ═══════════════════════════════════════ -->
   <section class="py-24 md:py-32 bg-black">
     <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
@@ -371,67 +371,91 @@
       </div>
 
       <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold forbes-serif mb-4 fade-up">
-        <span class="text-white">Perks That Pay</span><br>
-        <span class="bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">For Themselves.</span>
+        <span class="text-white">Real Partners.</span><br>
+        <span class="bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">Real Perks.</span>
       </h2>
-      <p class="text-xl text-white/60 forbes-sans mb-12 fade-up">Elite reservations. Fitness benefits. Travel upgrades. Daily perks. All included.</p>
+      <p class="text-xl text-white/60 forbes-sans mb-16 fade-up">These are the brands and experiences included with your Forbes Wireless membership.</p>
 
-      <!-- Tabs -->
-      <div class="flex flex-wrap justify-center gap-3 mb-12 fade-up">
-        <button class="tab-btn active px-5 py-2.5 rounded-full text-sm font-medium border border-white/20 bg-white/5 text-white/70 transition-all" onclick="switchTab(this, 'perks')">Perks</button>
-        <button class="tab-btn px-5 py-2.5 rounded-full text-sm font-medium border border-white/20 bg-white/5 text-white/70 transition-all" onclick="switchTab(this, 'lifestyle')">Lifestyle</button>
-        <button class="tab-btn px-5 py-2.5 rounded-full text-sm font-medium border border-white/20 bg-white/5 text-white/70 transition-all" onclick="switchTab(this, 'network')">Network</button>
-      </div>
+      <!-- 4 Partner Cards -->
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
 
-      <!-- Tab Panels -->
-      <div class="grid md:grid-cols-2 gap-12 items-center text-left">
-        <div>
-          <div id="tab-perks" class="tab-panel">
-            <h3 class="text-2xl font-bold text-white mb-2">Exclusive Member Perks</h3>
-            <p class="text-white/60 mb-6">Elite reservations, premium fitness, VIP travel, and daily perks worth $200+/month.</p>
-            <div class="space-y-3">
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Elite reservations & VIP experiences</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Premium fitness & wellness benefits</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>VIP travel upgrades & hotel access</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Daily food & coffee perks</div>
+        <!-- Fora Travel -->
+        <div class="glass-card rounded-2xl overflow-hidden text-left fade-up">
+          <div class="grid md:grid-cols-2">
+            <div class="aspect-video md:aspect-auto bg-gradient-to-br from-blue-900/40 to-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop" alt="Luxury travel" class="w-full h-full object-cover opacity-70" loading="lazy">
             </div>
-          </div>
-          <div id="tab-lifestyle" class="tab-panel hidden">
-            <h3 class="text-2xl font-bold text-white mb-2">NYC Discovery</h3>
-            <p class="text-white/60 mb-6">Curated venue collections, insider recommendations, and upcoming events.</p>
-            <div class="space-y-3">
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Curated venue collections</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Insider recommendations</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Upcoming events calendar</div>
-            </div>
-          </div>
-          <div id="tab-network" class="tab-panel hidden">
-            <h3 class="text-2xl font-bold text-white mb-2">Premium Wireless</h3>
-            <p class="text-white/60 mb-6">Verizon's network. Unlimited 5G. Included with every plan.</p>
-            <div class="space-y-3">
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Powered by Verizon</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Unlimited 5G data</div>
-              <div class="flex items-center gap-3 text-white/70"><svg class="w-4 h-4 text-forbes-red flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Nationwide coverage</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Phone mockup placeholder -->
-        <div class="flex justify-center">
-          <div class="w-[260px] rounded-[36px] bg-gradient-to-b from-gray-800 to-gray-900 p-3 shadow-2xl border border-white/10">
-            <div class="rounded-[28px] bg-black aspect-[9/19] flex flex-col items-center justify-center relative overflow-hidden">
-              <div class="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-black rounded-b-xl"></div>
-              <div class="text-center px-4">
-                <div class="w-12 h-12 rounded-xl bg-forbes-red/20 border border-forbes-red/30 flex items-center justify-center mx-auto mb-3">
-                  <svg class="w-6 h-6 text-forbes-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                </div>
-                <p class="text-white text-sm font-semibold forbes-serif">Forbes App</p>
-                <p class="text-white/40 text-[10px] tracking-widest uppercase mt-1">Your NYC Platform</p>
+            <div class="p-8">
+              <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-medium rounded-full mb-4">Forbes Escapes</span>
+              <h3 class="text-2xl font-bold text-white mb-2">Fora Travel</h3>
+              <p class="text-lg text-white/70 mb-2">Luxury Travel Advisors</p>
+              <p class="text-sm text-white/50 mb-4">Personal travel advisors who book VIP hotel rates, curated itineraries, and exclusive upgrades you can't get on your own.</p>
+              <div class="inline-block px-4 py-2 bg-forbes-red/20 border border-forbes-red/30 rounded-full text-forbes-red text-sm font-medium">
+                Complimentary Advisor Access
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Fontainebleau -->
+        <div class="glass-card rounded-2xl overflow-hidden text-left fade-up" style="transition-delay:0.1s">
+          <div class="grid md:grid-cols-2">
+            <div class="aspect-video md:aspect-auto bg-gradient-to-br from-amber-900/40 to-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Fontainebleau resort" class="w-full h-full object-cover opacity-70" loading="lazy">
+            </div>
+            <div class="p-8">
+              <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-medium rounded-full mb-4">Forbes Escapes</span>
+              <h3 class="text-2xl font-bold text-white mb-2">Fontainebleau</h3>
+              <p class="text-lg text-white/70 mb-2">Iconic Luxury Resorts</p>
+              <p class="text-sm text-white/50 mb-4">Member-exclusive rates and VIP experiences at Fontainebleau properties in Miami, Las Vegas, and New York.</p>
+              <div class="inline-block px-4 py-2 bg-forbes-red/20 border border-forbes-red/30 rounded-full text-forbes-red text-sm font-medium">
+                VIP Member Rates & Upgrades
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Performance Golf -->
+        <div class="glass-card rounded-2xl overflow-hidden text-left fade-up">
+          <div class="grid md:grid-cols-2">
+            <div class="aspect-video md:aspect-auto bg-gradient-to-br from-emerald-900/40 to-black overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=600&h=400&fit=crop" alt="Golf" class="w-full h-full object-cover opacity-70" loading="lazy">
+            </div>
+            <div class="p-8">
+              <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-medium rounded-full mb-4">Forbes Fit</span>
+              <h3 class="text-2xl font-bold text-white mb-2">Performance Golf</h3>
+              <p class="text-lg text-white/70 mb-2">Premium Golf Training</p>
+              <p class="text-sm text-white/50 mb-4">World-class instruction from top coaches, training programs, and exclusive member pricing on premium golf equipment.</p>
+              <div class="inline-block px-4 py-2 bg-forbes-red/20 border border-forbes-red/30 rounded-full text-forbes-red text-sm font-medium">
+                Exclusive Member Discounts
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forbes Food: Delivered -->
+        <div class="glass-card rounded-2xl overflow-hidden text-left fade-up" style="transition-delay:0.1s">
+          <div class="grid md:grid-cols-2">
+            <div class="aspect-video md:aspect-auto bg-gradient-to-br from-orange-900/40 to-black overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop" alt="Food delivery" class="w-full h-full object-cover opacity-70" loading="lazy">
+            </div>
+            <div class="p-8">
+              <span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-medium rounded-full mb-4">Forbes Food</span>
+              <h3 class="text-2xl font-bold text-white mb-2">Food to You</h3>
+              <p class="text-lg text-white/70 mb-2">Meals. Groceries. Delivered.</p>
+              <p class="text-sm text-white/50 mb-4">DoorDash DashPass for meals, Instacart+ for groceries, and Thrive Market for wellness staples&mdash;all included with your membership.</p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="px-3 py-1 bg-white/10 border border-white/10 rounded-full text-white/60 text-xs">DoorDash</span>
+                <span class="px-3 py-1 bg-white/10 border border-white/10 rounded-full text-white/60 text-xs">Instacart</span>
+                <span class="px-3 py-1 bg-white/10 border border-white/10 rounded-full text-white/60 text-xs">Thrive Market</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <p class="text-white/40 text-sm fade-up">New partners added monthly. This is just the beginning.</p>
     </div>
   </section>
 
